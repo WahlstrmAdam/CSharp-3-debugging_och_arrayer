@@ -15,7 +15,7 @@ namespace Tests.ArrayKatas
 
         [Theory]
         [InlineData('c', 16229)]
-        //Bonus - gör den snabbare även för sena bokstäver
+        //Bonus - gör den snabbare även för sena bokstäver genom binär sökning (https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search)
         //[InlineData('z', 822)]
         public void FasterWordCounterTest(char letter, int answer)
         {
