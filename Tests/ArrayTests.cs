@@ -73,5 +73,22 @@ namespace Tests
 
             Assert.Equal(4, productWeights.Length);
         }
+
+        [Fact]
+        public void MoveFirstValueThroughArray()
+        {
+            int[] testArrray = {0, 1, 2, 3, 4 };
+
+            for (int i = 0; i < testArrray.Length - 1; i++)
+            {
+                int indexValue = testArrray[i];
+                int nextIndexedValue = testArrray[i + 1];
+
+                testArrray[i] = nextIndexedValue;
+                testArrray[i + 1] = indexValue;
+            }
+
+            Assert.Equal(new []{ 1, 2, 3, 4, 0}, testArrray);
+        }
     }
 }
