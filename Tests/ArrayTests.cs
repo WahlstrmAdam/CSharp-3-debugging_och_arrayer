@@ -42,5 +42,25 @@ namespace Tests
             Assert.Equal(new []{0,0,0}, salaries);
             Assert.Equal(new string[] { null, null, null }, names);
         }
+
+
+        [Fact]
+        public void ArrayExample()
+        {
+            int age1 = 23;
+            int age2 = 43;
+            int age3 = 98;
+            //                        0   1   2
+            int[] ages = new int[] { 23, 43, 98};
+
+
+            double[] productWeight = new double[5];
+            productWeight[0] = 2.3;
+            productWeight[1] = 2.45;
+            productWeight[2] = 2.1;
+            productWeight[3] = 2.20054;
+
+            Assert.Equal(5, productWeight.Length);
+        }
     }
 }
