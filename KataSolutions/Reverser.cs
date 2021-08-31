@@ -9,5 +9,10 @@ namespace KataSolutions
             // testa först Array.Reverse, sen testa att skriva en lösning med hjälp av en for-loop istället
             throw new NotImplementedException();
         }
+
+        public static int[] GetReverse(int[] original)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

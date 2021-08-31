@@ -54,13 +54,24 @@ namespace Tests
             int[] ages = new int[] { 23, 43, 98};
 
 
-            double[] productWeight = new double[5];
-            productWeight[0] = 2.3;
-            productWeight[1] = 2.45;
-            productWeight[2] = 2.1;
-            productWeight[3] = 2.20054;
+            double[] productWeights = new double[4];
+            productWeights[0] = 2.3;
+            productWeights[1] = 2.45;
+            productWeights[2] = 2.1;
+            productWeights[3] = 2.20054;
 
-            Assert.Equal(5, productWeight.Length);
+            for (int productIndex = 0; productIndex < productWeights.Length; productIndex++)
+            {
+                productWeights[productIndex] += 0.05;
+            }
+
+            double totalProductSum = 0.0;
+            foreach (double productWeight in productWeights)
+            {
+                totalProductSum += productWeight;
+            }
+
+            Assert.Equal(4, productWeights.Length);
         }
     }
 }

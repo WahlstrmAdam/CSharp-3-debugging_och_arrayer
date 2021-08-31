@@ -20,11 +20,11 @@ namespace Tests.ArrayKatas
         //[InlineData(null, null]
         //[InlineData(new int[] { }, new int[] { })]
         //[InlineData(new[] { 0 }, new[] { 0 })]
-        public void ArrayReverserTest(int[] original, int[] reverse)
+        public void ArrayReverserTest(int[] original, int[] rightAnswer)
         {
             Reverser.Reverse(original);
 
-            Assert.Equal(reverse, original);
+            Assert.Equal(rightAnswer, original);
         }
 
         // Extrem bonus - använd templating för att göra så att 'Reverse' fungerar på vilken array som helst
