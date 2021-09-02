@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace KomplexaDatatyperKata
 {
@@ -7,11 +8,11 @@ namespace KomplexaDatatyperKata
         public static void Main(string[] args)
         {
 
-            Delivery order1 = new Delivery("trampoline", 3100, 73217418, "Fredag, 18:00", 50);
-            Delivery order2 = order1;
+            Delivery order = new Delivery(ProductName: "trampoline", 3100, 73217418, "Fredag, 18:00", 50);
 
-            order2.ProductName = "Pool";       
-                
+            List<Delivery> orders = new List<Delivery>();
+
+            orders.Add( new Delivery(ProductName:"trampolin"));
 
 
             while (true)

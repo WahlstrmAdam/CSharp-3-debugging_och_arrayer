@@ -8,7 +8,7 @@ namespace KomplexaDatatyperKata
 {
     public class Delivery
     {
-        public int OrderNumber;
+        private int OrderNumber;
         public string ProductName;
         public double Price;
         public string DeliveryDate;
@@ -29,5 +29,9 @@ namespace KomplexaDatatyperKata
 
         }
 
+        public Delivery(string ProductName)
+        {
+            this.ProductName = ProductName;
+        }
     }
 }
